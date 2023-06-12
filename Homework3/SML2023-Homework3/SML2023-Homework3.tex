@@ -1,0 +1,85 @@
+\documentclass[
+	ngerman,
+	points=true,% für die Aktivierung der Punktereferenzen funktioniert nicht für TeX Versionen vor 2020
+    solution=true,
+    accentcolor=9c,
+    colorbacktitle
+	]{tudaexercise}
+
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+%Formatierungen für Beispiele in diesem Dokument. Im Allgemeinen nicht notwendig!
+\let\file\texttt
+\let\code\texttt
+\let\pck\textsf
+\let\cls\textsf
+\let\tbs\textbackslash
+
+\usepackage{booktabs}% Erweiterte möglichkeiten beim Spacing um Linien in Tabellen
+\renewcommand*{\creditformatsum}[1]{\creditformat{Gesamt: #1}}
+
+\ConfigureHeadline{
+	headline={title-name-id}
+}
+
+\begin{document}
+
+\title[Homework 3/4]{Statistical Machine Learning -- Homework}
+\author{Prof. Dr. Jan Peters \\ Daniel Palenicek, An Thai Le, Theo Gruner, Maximilian Tölle \& Théo Vincent}
+\term{Sommersemester 2023 -- Due date: 26.06.2023, 23:59}
+\sheetnumber{3}
+
+\maketitle
+Each (sub)task in this homework is worth 1 point. For example, you can get up to 5 points in Task 3.1. The points you achieve in this homework will count towards the exam bonus points.
+
+In this exercise, all tasks are provided in jupyter notebooks. You can either host the jupyter notebooks on your own pc or you can work on them in a google colab. If you decide to work with colab, make sure to copy the provided notebooks before editing. Otherwise, your changes won't be saved!
+
+To submit the homework, print the jupyter notebook as a pdf and concatenate all pdfs in the provided latex template at the end of the file with
+\begin{verbatim}
+    \includepdf[pages=-]{task_submission/<your-colab.pdf>}
+\end{verbatim}
+
+Then submit your homework as a single pdf. Find all the tasks at 
+
+\section*{Regression}
+\begin{itemize}
+    \item \href{https://colab.research.google.com/drive/1ArDZN8IwCycHBqeLb2fWKjVQibBePaZk?usp=sharing}{https://colab.research.google.com/drive/1ArDZN8IwCycHBqeLb2fWKjVQibBePaZk?usp=sharing} or
+    \item as a jupyter notebook \textit{linear\_regression.ipynb}
+\end{itemize}
+
+\section*{Gaussian Processes}
+\begin{itemize}
+    \item \href{https://colab.research.google.com/drive/1nUkGI9co8pY3BgISzbxWNuJkGdNBzDVa?usp=sharing}{https://colab.research.google.com/drive/1nUkGI9co8pY3BgISzbxWNuJkGdNBzDVa?usp=sharing} or
+    \item in the attached jupyter notebook \textit{gp\_with\_numpy.ipynb}
+\end{itemize}
+
+\section*{Expectation Maximization}
+\begin{itemize}
+    \item \href{https://colab.research.google.com/drive/1T0wyDvAR8XySHRh336k8QmZnxpEXWi2i?usp=sharing}{https://colab.research.google.com/drive/1T0wyDvAR8XySHRh336k8QmZnxpEXWi2i?usp=sharing} or
+    \item in the attached jupyter notebook \textit{em\_image\_segmentation.ipynb}
+\end{itemize}
+
+\section*{Linear Dimensionality Reduction}
+\begin{itemize}
+    \item \href{https://colab.research.google.com/drive/1ELCa-dag1SJbpHTLW2zezmLdUvzHlxe-?usp=sharing}{https://colab.research.google.com/drive/1ELCa-dag1SJbpHTLW2zezmLdUvzHlxe-?usp=sharing} or
+    \item in the attached jupyter notebook \textit{pca.ipynb}
+\end{itemize}
+
+% Include the PDFs here
+
+% {task_submission/linear_regression.pdf}
+
+% {task_submission/gp_with_numpy.pdf}
+
+% {task_submission/em_image_segmentation.pdf}
+
+% {task_submission/pca.pdf}
+
+\end{document}
